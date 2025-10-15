@@ -1,17 +1,23 @@
 # dynamic-profile-endpoint
 
-**GitHub Repository:** https://github.com/Sbtech24/dynamic-profile-endpoint 
-**Deployed URL:** https://dynamic-profile-endpoint.onrender.com/me
+**GitHub Repository:** [https://github.com/Sbtech24/dynamic-profile-endpoint](https://github.com/Sbtech24/dynamic-profile-endpoint)  
+**Live URL:** [https://dynamic-profile-endpoint-production.up.railway.app/me](https://dynamic-profile-endpoint-production.up.railway.app/me)
+
 
 ##dependecies 
 | Package | Description |
 |----------|-------------|
 | `express` | Web framework for Node.js/Bun |
-| `axios` | HTTP client for API requests |
-| `dotenv` | Loads environment variables |
-| `@types/express` | TypeScript types for Express |
-| `@types/bun` | TypeScript types for Bun |
+| `axios` | HTTP client for making API requests |
+| `dotenv` | Loads environment variables from `.env` |
+| `@types/express` | TypeScript type definitions for Express |
+| `@types/bun` | TypeScript type definitions for Bun |
+| `morgan` | For proper logging |
+| `express-rate-limit` | For rate limiting|
+| `cors` | Handle cross-origin Resource Sharing|
 
+
+---
 
 To install dependencies:
 
