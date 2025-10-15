@@ -1,7 +1,7 @@
 # dynamic-profile-endpoint
 
-github url = https://github.com/Sbtech24/dynamic-profile-endpoint
-live url = https://dynamic-profile-endpoint.onrender.com/me
+**GitHub Repository:** https://github.com/Sbtech24/dynamic-profile-endpoint 
+**Deployed URL:** https://dynamic-profile-endpoint.onrender.com/me
 
 ##dependecies 
 | Package | Description |
