@@ -34,7 +34,7 @@ export async function AboutMe(req: Request, res: Response, next: NextFunction) {
   });
 
     }catch(error){
-        res.status(401).json({status:"Bad Request",error})
+        res.status(400).json({status:"Bad Request"})
         next()
     }
 
