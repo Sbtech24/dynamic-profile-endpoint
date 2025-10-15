@@ -36,7 +36,7 @@ export async function AboutMe(req: Request, res: Response, next: NextFunction) {
   });
 
     }catch(error){
-        res.status(400).json({status:"Bad Request"})
+        res.status(500).json({ status: "error", message: "Internal Server Error" });
         next()
     }
 
