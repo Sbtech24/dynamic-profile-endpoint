@@ -23,16 +23,13 @@ Clone the repository:
 ```bash
 git clone https://github.com/Sbtech24/dynamic-profile-endpoint.git
 cd dynamic-profile-endpoint
-
-To install dependencies:
 ```
+To install dependencies:
 
-```bash
 bun install
 
 To run:
 
-```bash
 bun run index.ts
 ```
 
