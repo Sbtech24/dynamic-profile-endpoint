@@ -2,7 +2,9 @@ import axios from "axios";
 import type { Request, Response, NextFunction } from "express";
 
 export async function AboutMe(req: Request, res: Response, next: NextFunction) {
-  const date = new Date().toISOString();
+    try{
+
+          const date = new Date().toISOString();
 
   const getRandomFact = async () => {
     try {
@@ -10,8 +12,12 @@ export async function AboutMe(req: Request, res: Response, next: NextFunction) {
       const fact = res.data.fact;
       return fact;
     } catch (error) {
-      throw new Error();
+        console.log(error)
+        const message = "Error displaying fact"
+        return message
+      ;
     }
+
   };
 
   const user = {
@@ -26,4 +32,11 @@ export async function AboutMe(req: Request, res: Response, next: NextFunction) {
     timestamp: date,
     fact: await getRandomFact(),
   });
+
+    }catch(error){
+        res.status(401).json({status:"Bad Request",error})
+        next()
+    }
+
+
 }
