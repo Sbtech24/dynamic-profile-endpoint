@@ -28,6 +28,10 @@ To install dependencies:
 
 bun install
 
+Create .env file at the root and set port 
+e.g 
+PORT = 3000
+
 To run :
 
 bun run dev - development script 
