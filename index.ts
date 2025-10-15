@@ -16,6 +16,12 @@ app.use(morgan("dev"))
 app.use(cors());
 app.use("/me",about)
 
+app.get("/", (req, res) => {
+  res.json({
+    message: "Welcome to My Dynamic Profile API. Visit /me to view the profile data.",
+  });
+});
+
 
 
 app.listen(PORT,()=>{
