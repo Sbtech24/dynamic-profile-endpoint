@@ -18,17 +18,25 @@
 
 
 ---
+Clone the repository:
 
+```bash
+git clone https://github.com/Sbtech24/dynamic-profile-endpoint.git
+cd dynamic-profile-endpoint
+```
 To install dependencies:
 
-```bash
 bun install
-```
 
-To run:
+Create .env file at the root and set port 
+e.g 
+PORT = 3000
 
-```bash
-bun run index.ts
+To run :
+
+bun run dev - development script 
+
+bun run start -production script
 ```
 
 This project was created using `bun init` in bun v1.2.21. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
