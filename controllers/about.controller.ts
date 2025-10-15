@@ -8,12 +8,14 @@ export async function AboutMe(req: Request, res: Response, next: NextFunction) {
 
   const getRandomFact = async () => {
     try {
-      const res = await axios.get("https://catfact.ninja/fact");
+      const res = await axios.get("https://catfact.ninja/fact",{
+        timeout:5000  // 5 seconds 
+      });
       const fact = res.data.fact;
       return fact;
     } catch (error) {
         console.log(error)
-        const message = "Error displaying fact"
+        const message = "Error displaying fact,Please try again Later"
         return message
       ;
     }
