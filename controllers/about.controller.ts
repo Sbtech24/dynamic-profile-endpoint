@@ -25,7 +25,7 @@ export async function AboutMe(req: Request, res: Response, next: NextFunction) {
   const user = {
     email: "bajomosemilore@gmail.com",
     name: "Oluwasemilore Bajomo",
-    Stack: "Node js,Typescipt, Postgresql",
+    stack: "Node js,Typescipt, Postgresql",
   };
 
   res.status(200).json({
